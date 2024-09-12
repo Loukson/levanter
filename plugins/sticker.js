@@ -3,13 +3,13 @@ const fm = true
 
 bot(
   {
-    pattern: 'sticker',
+    pattern: 'Loukson-stk',
     desc: 'image/video to sticker',
     type: 'sticker',
   },
   async (message, match) => {
     if (!message.reply_message || (!message.reply_message.video && !message.reply_message.image))
-      return await message.send('*sélection un img *')
+      return await message.send('*sélectioner un img🌀🤘🏻 *')
     return await message.send(
       await sticker(
         'str',
@@ -34,7 +34,7 @@ bot(
   },
   async (message, match) => {
     if (!message.reply_message || !message.reply_message.image)
-      return await message.send('*sélection un img man🤘🏻🌀*')
+      return await message.send('*sélection ou répondre à une img man🤘🏻🌀*')
     return await message.send(
       await circleSticker(
         await message.reply_message.downloadAndSaveMediaMessage('circleSticker'),
@@ -48,7 +48,7 @@ bot(
 
 bot(
   {
-    pattern: 'take ?(.*)',
+    pattern: 'Loukson ?(.*)',
     desc: 'change sticker pack',
     type: 'sticker',
   },
@@ -86,7 +86,7 @@ bot(
   },
   async (message, match) => {
     if (!message.reply_message.sticker || !message.reply_message || !message.reply_message.animated)
-      return await message.send('*Reply to animated sticker*')
+      return await message.send('*répond à une sticker animé*')
     return await message.sendFromUrl(
       await webpToMp4(await message.reply_message.downloadAndSaveMediaMessage('sticker'))
     )
