@@ -9,7 +9,7 @@ bot(
   },
   async (message, match) => {
     if (!message.reply_message || (!message.reply_message.video && !message.reply_message.image))
-      return await message.send('*Reply to image/video*')
+      return await message.send('*sélection un img *')
     return await message.send(
       await sticker(
         'str',
@@ -34,7 +34,7 @@ bot(
   },
   async (message, match) => {
     if (!message.reply_message || !message.reply_message.image)
-      return await message.send('*Reply to a image*')
+      return await message.send('*sélection un img man🤘🏻🌀*')
     return await message.send(
       await circleSticker(
         await message.reply_message.downloadAndSaveMediaMessage('circleSticker'),
