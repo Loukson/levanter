@@ -24,7 +24,7 @@ bot.addCommand(
     })
     const [date, time] = getDate()
     let CMD_HELP = `╭────────────────╮
-						ʟᴇᴠᴀɴᴛᴇʀ
+						🅽︎🅰︎🆃︎🆄︎🆃︎🅾︎-🅼︎🅳︎
 ╰────────────────╯
 
 ╭────────────────
@@ -93,23 +93,23 @@ bot.addCommand(
       }
     })
     const [date, time] = getDate()
-    let msg = `\`\`\`╭═══ LEVANTER ═══⊷
-┃❃╭──────────────
-┃❃│ Prefix : ${PREFIX}
-┃❃│ User : ${message.pushName}
-┃❃│ Time : ${time}
-┃❃│ Day : ${date.toLocaleString('en', { weekday: 'long' })}
-┃❃│ Date : ${date.toLocaleDateString('hi')}
-┃❃│ Version : ${VERSION}
-┃❃│ Plugins : ${PLUGINS.count}
-┃❃│ Ram : ${getRam()}
-┃❃│ Uptime : ${getUptime('t')}
-┃❃│ Platform : ${getPlatform()}
-┃❃╰───────────────
+    let msg = `\`\`\`╭═══🅽︎🅰︎🆃︎🆄︎🆃︎🅾︎-🅼︎🅳︎═══⊷
+┃🍥╭──────────────
+┃🍥│ Prefix : ${PREFIX}
+┃🤘🏻│ User : ${message.pushName}
+┃🍥│ Time : ${time}
+┃🤘🏻│ Day : ${date.toLocaleString('en', { weekday: 'long' })}
+┃🌀│ Date : ${date.toLocaleDateString('hi')}
+┃🍃│ Version : ${VERSION}
+┃🍥│ Plugins : ${PLUGINS.count}
+┃🍃│ Ram : ${getRam()}
+┃🌀│ Uptime : ${getUptime('t')}
+┃🍜│ Platform : ${getPlatform()}
+┃🍜╰───────────────
 ╰═════════════════⊷\`\`\`\n`
 
     if (match && commands[match]) {
-      msg += ` ╭─❏ ${textToStylist(match.toLowerCase(), 'smallcaps')} ❏\n`
+      msg += ` ╭─🍥 ${textToStylist(match.toLowerCase(), 'smallcaps')} ❏\n`
       for (const plugin of commands[match])
         msg += ` │ ${textToStylist(plugin.toUpperCase(), 'mono')}\n`
       msg += ` ╰─────────────────`
@@ -117,7 +117,7 @@ bot.addCommand(
       return await message.send(msg)
     }
     for (const command in commands) {
-      msg += ` ╭─❏ ${textToStylist(command.toLowerCase(), 'smallcaps')} ❏\n`
+      msg += ` ╭─🍥 ${textToStylist(command.toLowerCase(), 'smallcaps')} ❏\n`
       for (const plugin of commands[command])
         msg += ` │ ${textToStylist(plugin.toUpperCase(), 'mono')}\n`
       msg += ` ╰─────────────────\n`
