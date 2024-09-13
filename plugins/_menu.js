@@ -27,7 +27,7 @@ bot.addCommand(
 						🅽︎🅰︎🆃︎🆄︎🆃︎🅾︎-🅼︎🅳︎
 ╰────────────────╯
 
-╭────────────────
+╭────────────────🍥
 │ Prefix : ${PREFIX}
 │ User : ${message.pushName}
 │ Time : ${time}
@@ -38,8 +38,9 @@ bot.addCommand(
 │ Ram : ${getRam()}
 │ Uptime : ${getUptime('t')}
 │ Platform : ${getPlatform()}
-╰────────────────
-╭────────────────
+│ Développeurs : ✮✮✮ʟᴏᴜᴋsᴏɴ ᵘᶻᵘᵐᵃᵏⁱ₊ ͟͟͞͞➳
+╰────────────────🍥
+╭────────────────🍥
 `
     sorted.map(async (command, i) => {
       if (command.dontAddCommandList === false && command.pattern !== undefined) {
@@ -97,15 +98,23 @@ bot.addCommand(
 ┃🍥╭──────────────
 ┃🍥│ Prefix : ${PREFIX}
 ┃🤘🏻│ User : ${message.pushName}
-┃🍥│ Time : ${time}
-┃🤘🏻│ Day : ${date.toLocaleString('en', { weekday: 'long' })}
+┃🍥│ heure : ${time}
+┃🤘🏻│ day : ${date.toLocaleString('en', { weekday: 'long' })}
 ┃🌀│ Date : ${date.toLocaleDateString('hi')}
 ┃🍃│ Version : ${VERSION}
 ┃🍥│ Plugins : ${PLUGINS.count}
 ┃🍃│ Ram : ${getRam()}
 ┃🌀│ Uptime : ${getUptime('t')}
 ┃🍜│ Platform : ${getPlatform()}
+┃🌀│ Développeurs : ✮✮✮ʟᴏᴜᴋsᴏɴ ᵘᶻᵘᵐᵃᵏⁱ₊ ͟͟͞͞➳
 ┃🍜╰───────────────
+│🍥🍥🍥🍥🍥🍥🍥🍥🍥🍥🍥
+│🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀
+│🍥🍜🤘🏻🍃𝗟𝗢𝗨𝗞𝗦𝗢𝗡🍃🌀⚡
+│🍜🍃𝗨𝗭𝗨𝗠𝗔𝗞𝗜🍥🌀🍃🤘🏻🍜
+│🍥✮✮✮ʟᴏᴜᴋsᴏɴ ᵘᶻᵘᵐᵃᵏⁱ₊ ͟͟͞͞➳🍥
+│🤘🏻🤘🏻🤘🏻🤘🏻🤘🏻🤘🏻🤘🏻🤘🏻🤘🏻🤘🏻🤘🏻
+│🍜🍜🍜🍜🍜🍜🍜🍜🍜🍜🍜
 ╰═════════════════⊷\`\`\`\n`
 
     if (match && commands[match]) {
